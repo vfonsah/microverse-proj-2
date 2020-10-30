@@ -1,0 +1,10 @@
+@media (min-width: 786px){
+    #welcome-section {
+        height: 100vh;
+    }
+}
+
+#navbar {
+   position: fixed;
+   top: 0;
+}
