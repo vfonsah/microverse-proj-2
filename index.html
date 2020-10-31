@@ -4,39 +4,85 @@
 <head>
   <meta charset="UTF-8">
   <title>Fork Me! FCC: Test Suite Template</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-  <nav id="navbar"></nav>
-    <nav id="navbar">
-      <ul class="nav-list">  
-        <li>
-          <a href="#welcome-section" >About</a>
-        </li>
-        <li>
-          <a href="#projects">Work</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <section id="welcome-section">
+  <nav id="navbar">
+    <ul class="nav-list">
+      <li>
+        <a href="#welcome-section">About</a>
+      </li>
+      <li>
+        <a href="#projects">Work</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <main class="container">
+    <section id="welcome-section" class="text-center">
       <h1>Hey I am Mimic</h1>
+      <h3>a web developer</h3>
     </section>
-    
-    <section id="projects">
-      <div class="project-tile">
-        <a href="#"></a>
+
+    <section id="projects" class="projects-section">
+      <h2 class="projects-section-header text-center mb-5">These are some of my projects</h2>
+      <div class="row projects-grid card-deck">
+        <div class="col-md-4">
+          <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank" class="">
+            <div class="card" style="width: 18rem;">
+              <img
+                src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg"
+                class="card-img-top" alt="Dr. Norman Borlaug img">
+              <div class="card-body">
+                <p class="card-text project-title"><span class="code">&lt;</span>
+                  Tribute Page
+                  <span class="code">&#47;&gt;</span></p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank" class="">
+            <div class="card" style="width: 18rem;">
+              <img
+                src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png"
+                class="card-img-top" alt="Quote message img">
+              <div class="card-body">
+                <p class="card-text project-title"><span class="code">&lt;</span>
+                  Random Quote Machine
+                  <span class="code">&#47;&gt;</span></p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank" class="">
+            <div class="card" style="width: 18rem;">
+              <img
+                src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/calc.png"
+                class="card-img-top" alt="Calculator img">
+              <div class="card-body">
+                <p class="card-text project-title"><span class="code">&lt;</span>
+                  JavaScript Calculator
+                  <span class="code">&#47;&gt;</span></p>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
     <div>
-      <a href="https://github.com/vfonsah/microverse-proj-2/blob/master/index.html" id="profile-link" target="_blank">To Github</a>
+      <a href="https://github.com/vfonsah/microverse-proj-2/blob/master/index.html" id="profile-link" target="_blank">To
+        Github</a>
     </div>
-
+  </main>
   <!--
 
     Hello Camper!
