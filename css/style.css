@@ -1,14 +1,29 @@
-@media (min-width: 786px){
-    #welcome-section {
+@media (min-width: 786px) {
+  /* #welcome-section {
         height: 100vh;
-    }
+    } */
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
 }
 
 #navbar {
-   position: fixed;
-   top: 0;
+  position: fixed;
+  top: 0;
 }
 
-.projects-section-header {
-    /* text-decoration: underline; */
+.project-card-img {
+  height: 18rem;
+}
+
+p.project-title {
+  font-size: larger;
+  font-weight: 600;
+}
+
+.card.project-tile:hover {
+  text-decoration: none;
 }
