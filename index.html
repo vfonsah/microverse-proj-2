@@ -12,67 +12,94 @@
 <body>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-  <nav id="navbar">
-    <ul class="nav-list">
-      <li>
-        <a href="#welcome-section">About</a>
-      </li>
-      <li>
-        <a href="#projects">Work</a>
-      </li>
-      <li>
-        <a href="#">Contact</a>
-      </li>
-    </ul>
-  </nav>
-  <main class="container">
-    <section id="welcome-section" class="text-center">
+  <main class="container-fluid">
+    <nav id="navbar" class="float-right">
+      <ul class="nav-list float-right">
+        <li class="d-inline-block">
+          <a href="#welcome-section">About</a>
+        </li>
+        <li class="d-inline-block">
+          <a href="#projects">Work</a>
+        </li>
+        <li class="d-inline-block">
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <section id="welcome-section" class="text-center d-flexbox vh-100">
       <h1>Hey I am Mimic</h1>
       <h3>a web developer</h3>
     </section>
 
     <section id="projects" class="projects-section">
       <h2 class="projects-section-header text-center mb-5">These are some of my projects</h2>
-      <div class="row projects-grid card-deck">
-        <div class="col-md-4">
-          <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank" class="">
-            <div class="card" style="width: 18rem;">
-              <img
-                src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg"
-                class="card-img-top" alt="Dr. Norman Borlaug img">
-              <div class="card-body">
-                <p class="card-text project-title"><span class="code">&lt;</span>
-                  Tribute Page
-                  <span class="code">&#47;&gt;</span></p>
-              </div>
+      <div class="projects-grid row row-cols-1 row-cols-md-3 card-deck">
+        <div class="col mb-4">
+          <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank" class="card project-tile vw-40">
+            <img
+              src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg"
+              class="card-img-top project-card-img" alt="Dr. Norman Borlaug img">
+            <div class="card-body bg-secondary text-light text-decoration-none">
+              <p class="card-text project-title text-center"><span class="code">&lt;</span>
+                Tribute Page
+                <span class="code">&#47;&gt;</span></p>
             </div>
           </a>
         </div>
-        <div class="col-md-4">
-          <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank" class="">
-            <div class="card" style="width: 18rem;">
-              <img
-                src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png"
-                class="card-img-top" alt="Quote message img">
-              <div class="card-body">
-                <p class="card-text project-title"><span class="code">&lt;</span>
-                  Random Quote Machine
-                  <span class="code">&#47;&gt;</span></p>
-              </div>
+        <div class="col mb-4">
+          <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank" class="card project-tile vw-40">
+            <img
+              src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png"
+              class="card-img-top project-card-img" alt="Quote message img">
+            <div class="card-body bg-secondary text-light text-decoration-none">
+              <p class="card-text project-title text-center"><span class="code">&lt;</span>
+                Random Quote Machine
+                <span class="code">&#47;&gt;</span></p>
             </div>
           </a>
         </div>
-        <div class="col-md-4">
-          <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank" class="">
-            <div class="card" style="width: 18rem;">
-              <img
-                src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/calc.png"
-                class="card-img-top" alt="Calculator img">
-              <div class="card-body">
-                <p class="card-text project-title"><span class="code">&lt;</span>
-                  JavaScript Calculator
-                  <span class="code">&#47;&gt;</span></p>
-              </div>
+        <div class="col mb-4">
+          <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank" class="card project-tile vw-40">
+            <img
+              src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/calc.png"
+              class="card-img-top project-card-img" alt="Calculator img">
+            <div class="card-body bg-secondary text-light text-decoration-none">
+              <p class="card-text project-title text-center"><span class="code">&lt;</span>
+                JavaScript Calculator
+                <span class="code">&#47;&gt;</span></p>
+            </div>
+          </a></div>
+        <div class="col mb-4">
+          <a href="https://codepen.io/freeCodeCamp/full/mVEJag" target="_blank" class="card project-tile vw-40">
+            <img
+              src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/map.jpg"
+              class="card-img-top project-card-img" alt="Calculator img">
+            <div class="card-body bg-secondary text-light text-decoration-none">
+              <p class="card-text project-title text-center"><span class="code">&lt;</span>
+                Map Data Across The Globe
+                <span class="code">&#47;&gt;</span></p>
+            </div>
+          </a></div>
+        <div class="col mb-4">
+          <a href="https://codepen.io/freeCodeCamp/full/wGqEga" target="_blank" class="card project-tile vw-40">
+            <img
+              src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/wiki.png"
+              class="card-img-top project-card-img" alt="Calculator img">
+            <div class="card-body bg-secondary text-light text-decoration-none">
+              <p class="card-text project-title text-center"><span class="code">&lt;</span>
+                Wikipedia Viewer
+                <span class="code">&#47;&gt;</span></p>
+            </div>
+          </a></div>
+        <div class="col mb-4">
+          <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank" class="card project-tile vw-40">
+            <img
+              src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tic-tac-toe.png"
+              class="card-img-top project-card-img" alt="Calculator img">
+            <div class="card-body bg-secondary text-light text-decoration-none">
+              <p class="card-text project-title text-center"><span class="code">&lt;</span>
+                Tic Tac Toe Game
+                <span class="code">&#47;&gt;</span></p>
             </div>
           </a>
         </div>
